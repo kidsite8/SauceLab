@@ -20,6 +20,10 @@ class LoginPage extends Page {
         return $('input[type="submit"]');
     }
 
+     get loginFail () {
+        return $('.error-message-container.error');
+    }
+
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
